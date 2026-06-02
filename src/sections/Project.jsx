@@ -50,6 +50,17 @@ const data = [
             "url": "https://iberstudio.github.io/Wedding-Invitation/",
             "tags": ["JavaScript", "HTML", "CSS", "GSAP"],
             "category": "featured"
+        },
+        {
+            "id": 4,
+            "title": "Mini Quiz App",
+            "description": "Just a sociology class project assignment",
+            "image": [
+                getImage("mini-quiz/thumbnail.webp"),
+            ],
+            "url": "https://icebearvenom.github.io/Quiz-Sosiologi/",
+            "tags": ["JavaScript", "HTML", "CSS"],
+            "category": "featured"
         }
     ]
 
