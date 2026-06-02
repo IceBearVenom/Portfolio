@@ -5,13 +5,13 @@ import { useGSAP } from '@gsap/react';
 import * as Card from '../components/Card'
 import { Button1 } from '../components/Button';
 
-import htmlIcon from "./assets/icons/html.png"
-import cssIcon from "./assets/icons/css.png"
-import jsIcon from "./assets/icons/js.png"
-import reactIcon from "./assets/icons/react.png"
-import pythonIcon from "./assets/icons/python.png"
-import photoshopIcon from "./assets/icons/photoshop.png"
-import illustratorIcon from "./assets/icons/illustrator.png"
+import htmlIcon from "../assets/icons/html.png"
+import cssIcon from "../assets/icons/css.png"
+import jsIcon from "../assets/icons/js.png"
+import reactIcon from "../assets/icons/react.png"
+import pythonIcon from "../assets/icons/python.png"
+import photoshopIcon from "../assets/icons/photoshop.png"
+import illustratorIcon from "../assets/icons/illustrator.png"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
