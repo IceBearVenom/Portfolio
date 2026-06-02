@@ -5,7 +5,53 @@ import { useGSAP } from '@gsap/react';
 
 import * as Card from '../components/Card';
 
-import { projects } from '../data/projects.json';
+const projectImages = import.meta.glob(
+    "../assets/projects/**/*.{png,jpg,jpeg,webp}",
+    { eager: true }
+);
+
+const getImage = (path) =>
+    projectImages[`../assets/projects/${path}`].default;
+
+const data = [
+        {
+            "id": 1,
+            "title": "BMI Calculator",
+            "description": "A simple BMI calculator",
+            "image": [
+                getImage("bmi-calculator/thumbnail.webp"),
+                getImage("bmi-calculator/content-1.webp"),
+                getImage("bmi-calculator/content-2.webp"),
+            ],
+            "url": "https://revou-fundamental-course.github.io/20-jan-25-IceBearVenom/",
+            "tags": ["JavaScript", "HTML", "CSS"],
+            "category": ""
+        },
+        {
+            "id": 2,
+            "title": "Home Decor Store",
+            "description": "An e-commerce website for a home decor business",
+            "image": [
+                getImage("home-decor/thumbnail.webp"),
+                getImage("home-decor/content-1.webp"),
+            ],
+            "url": "https://iberstudio.github.io/Home-Decor/",
+            "tags": ["JavaScript", "HTML", "CSS"],
+            "category": ""
+        },
+        {
+            "id": 3,
+            "title": "Wedding Invitation",
+            "description": "A wedding invitation website",
+            "image": [
+                getImage("wedding-invitation/thumbnail.webp"),
+                getImage("wedding-invitation/content-1.webp"),
+            ],
+            "url": "https://iberstudio.github.io/Wedding-Invitation/",
+            "tags": ["JavaScript", "HTML", "CSS", "GSAP"],
+            "category": "featured"
+        }
+    ]
 
 export const Project = () => {
 
@@ -111,7 +157,7 @@ export const Project = () => {
                         <span ref={indicatorRef} className="indicator" />
                     </div>
                     <div className="projects">
-                        {projects.map(project => (
+                        {data.map(project => (
                             checkCategory(project.category) && (
                                 <Card.Type3 
                                     key={project.id}
@@ -129,7 +175,7 @@ export const Project = () => {
                     onScroll={handleScroll}
                 >
                     {isMobile ? (
-                        projects.map(project => {
+                        data.map(project => {
                             return (
                                 <Card.Type2
                                     key={project.title}
