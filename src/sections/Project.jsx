@@ -60,7 +60,7 @@ const data = [
             ],
             "url": "https://icebearvenom.github.io/Quiz-Sosiologi/",
             "tags": ["JavaScript", "HTML", "CSS"],
-            "category": "featured"
+            "category": ""
         }
     ]
 
