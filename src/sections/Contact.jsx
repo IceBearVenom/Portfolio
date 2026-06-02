@@ -32,7 +32,7 @@ export const Contact = () => {
                 </div>    
                 <div className="contact-content">
                     <h3>Have a question, idea, or opportunity? Feel free to reach out.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                    <p>As a student, I'm continuously learning and improving my skills through projects and new challenges. Feel free to get in touch for discussions, feedback, or potential collaborations.</p>
                     <div className="contact-info">
                         <div className="info">
                             <i className="bi bi-envelope-fill"></i>

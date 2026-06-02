@@ -148,7 +148,8 @@ export const About = ({ AboutImage }) => {
                     <h1>ABOUT ME</h1>
                     <div className="story">
                         <h2>HI, I'M TRISTAN</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque numquam tempore ducimus exercitationem aperiam perspiciatis excepturi nemo placeat blanditiis. Sapiente nihil dolore, doloribus tempora cupiditate quas recusandae? Reprehenderit, doloremque.</p>
+                        <p>A student and aspiring front-end developer who enjoys creating responsive and user-friendly web applications. I'm passionate about learning new technologies, solving problems, and turning ideas into engaging digital experiences.
+                        </p>
                         <Button1 text="Open CV" icon="bi-file-earmark-text-fill" />
                     </div>
                 </div>
