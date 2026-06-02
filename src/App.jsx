@@ -39,7 +39,7 @@ function App() {
     <Loader />
     <main>
       <Navbar />
-      <Hero HeroImage={"./src/assets/hero.png"} />
+      <Hero HeroImage={"./assets/hero.png"} />
       <About />
       <Project />
     </main>
