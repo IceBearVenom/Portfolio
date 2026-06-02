@@ -5,9 +5,9 @@
             "title": "BMI Calculator",
             "description": "A simple BMI calculator",
             "image": [
-                "./assets/projects/bmi-calculator/thumbnail.webp",
-                "./assets/projects/bmi-calculator/content-1.webp",
-                "./assets/projects/bmi-calculator/content-2.webp"
+                "./src/assets/projects/bmi-calculator/thumbnail.webp",
+                "./src/assets/projects/bmi-calculator/content-1.webp",
+                "./src/assets/projects/bmi-calculator/content-2.webp"
             ],
             "url": "https://revou-fundamental-course.github.io/20-jan-25-IceBearVenom/",
             "tags": ["JavaScript", "HTML", "CSS"],
@@ -18,8 +18,8 @@
             "title": "Home Decor Store",
             "description": "An e-commerce website for a home decor business",
             "image": [
-                "./assets/projects/home-decor/thumbnail.webp",
-                "./assets/projects/home-decor/content-1.webp"
+                "./src/assets/projects/home-decor/thumbnail.webp",
+                "./src/assets/projects/home-decor/content-1.webp"
             ],
             "url": "https://iberstudio.github.io/Home-Decor/",
             "tags": ["JavaScript", "HTML", "CSS"],
@@ -30,8 +30,8 @@
             "title": "Wedding Invitation",
             "description": "A wedding invitation website",
             "image": [
-                "./assets/projects/wedding-invitation/thumbnail.webp",
-                "./assets/projects/wedding-invitation/content-1.webp"
+                "./src/assets/projects/wedding-invitation/thumbnail.webp",
+                "./src/assets/projects/wedding-invitation/content-1.webp"
             ],
             "url": "https://iberstudio.github.io/Wedding-Invitation/",
             "tags": ["JavaScript", "HTML", "CSS", "GSAP"],
