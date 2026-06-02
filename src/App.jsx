@@ -13,6 +13,8 @@ import { About } from './sections/About'
 import { Project } from './sections/Project'
 import { Contact } from './sections/Contact'
 
+import heroImage from "./assets/hero.png"
+import aboutImage from "./assets/about.png"
 
 function App() {
 
@@ -40,8 +42,8 @@ function App() {
     <Loader />
     <main>
       <Navbar />
-      <Hero HeroImage={"./assets/hero.png"} />
-      <About />
+      <Hero HeroImage={heroImage} />
+      <About AboutImage={aboutImage} />
       <Project />
     </main>
     <footer ref={footerRef}>

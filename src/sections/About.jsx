@@ -5,23 +5,31 @@ import { useGSAP } from '@gsap/react';
 import * as Card from '../components/Card'
 import { Button1 } from '../components/Button';
 
+import htmlIcon from "./assets/icons/html.png"
+import cssIcon from "./assets/icons/css.png"
+import jsIcon from "./assets/icons/js.png"
+import reactIcon from "./assets/icons/react.png"
+import pythonIcon from "./assets/icons/python.png"
+import photoshopIcon from "./assets/icons/photoshop.png"
+import illustratorIcon from "./assets/icons/illustrator.png"
+
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-export const About = () => {
+export const About = ({ AboutImage }) => {
 
     const aboutRef = useRef();
 
     const cardRef = useRef();
     
     const cardSrc = [
-        { name: "HTML", icon: "./assets/icons/html.png" },
-        { name: "CSS", icon: "./assets/icons/css.png" },
-        { name: "JS", icon: "./assets/icons/js.png" },
-        { name: "React", icon: "./assets/icons/react.png" },
-        { name: "Python", icon: "./assets/icons/python.png" },
-        { name: "Photoshop", icon: "./assets/icons/photoshop.png" },
-        { name: "Ilustrator", icon: "./assets/icons/illustrator.png" },
+        { name: "HTML", icon: htmlIcon },
+        { name: "CSS", icon: cssIcon },
+        { name: "JS", icon: jsIcon },
+        { name: "React", icon: reactIcon },
+        { name: "Python", icon: pythonIcon },
+        { name: "Photoshop", icon: photoshopIcon },
+        { name: "Ilustrator", icon: illustratorIcon },
     ];
 
     const [isMobile, setIsMobile] = useState(false);
@@ -150,7 +158,7 @@ export const About = () => {
                             <Card.Type1 key={index} name={card.name} icon={card.icon} />
                         ))}
                     </div>
-                    <img className="about-img" src="./assets/about.png" alt="about" />
+                    <img className="about-img" src={AboutImage} alt="about" />
                 </div>  
             </div>
         </section>
