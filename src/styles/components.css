@@ -1,0 +1,332 @@
+/* =======================================================
+        BUTTONS
+   ======================================================= */
+/* === Button Type 1 */
+/* #region */
+button.type-1 {
+  width: 144px;
+  height: 48px;
+  background: rgb(var(--secondary-color));
+  position: relative;
+  text-align: center;
+  border-radius: 1rem;
+  border: 2px solid rgb(var(--black-color));
+  box-shadow: 0 4px 4px rgba(var(--black-color), 0.5);
+  font-family: var(--hero-font);
+  transition: background 0.3s;
+}
+
+button.type-1 .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+button.type-1 .button-wrapper,
+button.type-1 .text,
+button.type-1 .icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: rgb(var(--white-color));
+}
+
+button.type-1 .text {
+  top: 0
+}
+
+button.type-1 .text,
+button.type-1 .icon {
+  transition: top 0.5s;
+}
+
+button.type-1 .icon {
+  color: rgb(var(--white-color));
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+button.type-1:hover {
+  background: rgb(var(--green-color));
+}
+
+button.type-1:hover .text {
+  top: -100%;
+}
+
+button.type-1:hover .icon {
+  top: 0;
+}
+
+/* #endregion */
+
+
+/* =======================================================
+        SCROLL BAR
+   ======================================================= */
+/* #region */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--black-color));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--yellow-color));
+  border-radius: 1rem;
+}
+
+/* #endregion */
+
+/* =======================================================
+        CARDS
+   ======================================================= */
+.card {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+/* === Card Type 1 */
+/* #region */
+.card.type-1 {
+  width: 200px;
+  height: 300px;
+  background-color: rgb(var(--white-color));
+  border-radius: 1rem;
+  border: 1px solid rgb(var(--black-color));
+  font-family: var(--hero-font);
+  box-shadow: 0 4px 8px rgba(var(--black-color), 0.8);
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.card.type-1 > * {
+  width: 100%;
+}
+
+.card.type-1 .card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(var(--black-color));
+  border-radius: 1rem;
+}
+
+.card.type-1 .card-content img {
+  width: 64px;
+  height: 64px;
+}
+
+.card.type-1 .card-icon > * {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card.type-1 .card-icon.bottom {
+  transform: rotate(180deg);
+}
+
+.card.type-1 .card-icon h4 {
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card.type-1 .card-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* #endregion */
+
+/* === Card Type 2 */
+/* #region */
+.card.type-2 {
+  cursor: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 480px;
+  min-width: 360px;
+  height: fit-content;
+  padding: 1rem;
+  border: 3px solid rgb(var(--black-color));
+  border-radius: 1rem;
+  background: rgb(var(--white-color));
+  box-shadow: 0 4px 16px rgba(var(--black-color), 0.5);
+}
+
+.card.type-2 .card-title h4 {
+  padding-bottom: 1rem;
+  transform: 
+    scaleX(1.5)
+    scaleY(1.5);
+  display: none;
+}
+
+.card.type-2 .card-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.card.type-2 .card-image .index-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(var(--black-color), 0.5);
+  color: rgb(var(--white-color));
+  padding: 4px 10px;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+.card.type-2 .card-image .image-list {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1 / 1;
+  
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.card.type-2 .card-image .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.card.type-2 .card-image img {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card.type-2 .card-image .pagination {
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem;
+}
+
+.card.type-2 .card-image .pagination span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgb(var(--black-color));
+  transition: all 0.3s;
+}
+
+.card.type-2 .card-image .pagination .active {
+  width: 8px;
+  height: 8px;
+  background: rgb(var(--secondary-color));
+}
+
+.card.type-2 .card-content {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.card.type-2 .card-content .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.card.type-2 .card-content .buttons > * {
+  cursor: pointer;
+}
+
+.card.type-2 .card-content .buttons .left {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card.type-2 .card-content .description {
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+
+.card.type-2 .card-content .tools-tag {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: rgb(var(--primary-color));
+}
+
+
+/* #endregion */
+
+/* === Card Type 3 */
+/* #region */
+.card.type-3 {
+  cursor: pointer;
+  position: relative;
+}
+.card.type-3 img {
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card.type-3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(var(--black-color), 0.6);
+  color: rgb(var(--white-color));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card.type-3:hover .overlay {
+  opacity: 1;
+}
+
+.card.type-3 .overlay h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* #endregion */
