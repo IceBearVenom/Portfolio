@@ -53,7 +53,7 @@ const data = [
         },
         {
             "id": 4,
-            "title": "Mini Quiz App",
+            "title": "Sociology Mini Quiz App",
             "description": "Just a sociology class project assignment",
             "image": [
                 getImage("mini-quiz/thumbnail.webp"),
