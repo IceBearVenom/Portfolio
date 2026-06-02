@@ -15,13 +15,13 @@ export const About = () => {
     const cardRef = useRef();
     
     const cardSrc = [
-        { name: "HTML", icon: "./src/assets/icons/html.png" },
-        { name: "CSS", icon: "./src/assets/icons/css.png" },
-        { name: "JS", icon: "./src/assets/icons/js.png" },
-        { name: "React", icon: "./src/assets/icons/react.png" },
-        { name: "Python", icon: "./src/assets/icons/python.png" },
-        { name: "Photoshop", icon: "./src/assets/icons/photoshop.png" },
-        { name: "Ilustrator", icon: "./src/assets/icons/illustrator.png" },
+        { name: "HTML", icon: "./assets/icons/html.png" },
+        { name: "CSS", icon: "./assets/icons/css.png" },
+        { name: "JS", icon: "./assets/icons/js.png" },
+        { name: "React", icon: "./assets/icons/react.png" },
+        { name: "Python", icon: "./assets/icons/python.png" },
+        { name: "Photoshop", icon: "./assets/icons/photoshop.png" },
+        { name: "Ilustrator", icon: "./assets/icons/illustrator.png" },
     ];
 
     const [isMobile, setIsMobile] = useState(false);
@@ -150,7 +150,7 @@ export const About = () => {
                             <Card.Type1 key={index} name={card.name} icon={card.icon} />
                         ))}
                     </div>
-                    <img className="about-img" src="./src/assets/about.png" alt="about" />
+                    <img className="about-img" src="./assets/about.png" alt="about" />
                 </div>  
             </div>
         </section>
