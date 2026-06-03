@@ -326,7 +326,8 @@ footer {
 
 .hero-content .cta i:hover .tooltip {
   scale: 1;
-  transform: translateY(150%);
+  transform: 
+    translateY(150%);
 }
 
 /* =======================================================
