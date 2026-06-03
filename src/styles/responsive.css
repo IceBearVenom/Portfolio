@@ -117,8 +117,10 @@
     .project-container .project-list {
         display: none;
     }
+
     .project-container .title h1 {
         writing-mode: horizontal-tb;
+        transform-origin: center;
         transform: 
             scaleX(3)
             scaleY(4);

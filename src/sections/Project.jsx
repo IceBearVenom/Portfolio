@@ -136,7 +136,7 @@ export const Project = () => {
                 {isMobile && (
                     <div className="project-pagination">
                         {previewRef.current &&
-                            Array.from(previewRef.current.children).map((child, index) => (
+                            Array.from(data).map((child, index) => (
                                 <span
                                     key={index}
                                     className={index === currentIndex ? "active" : ""}
